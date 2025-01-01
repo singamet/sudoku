@@ -154,6 +154,5 @@ export const starterBoard = (
     }
   }
 
-  console.log(numCounts);
   return { board, visibleCells, numCounts };
 };

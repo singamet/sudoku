@@ -31,13 +31,10 @@ function App() {
   const [newGame, setNewGame] = useState(false);
   useEffect(() => {
     const generate = generateSudoku();
-    console.log(generate);
     if (generate) {
       setSolution(generate);
       const { board, visibleCells, numCounts } = starterBoard(generate);
       setBoard(board);
-      console.log(board);
-      console.log(visibleCells);
       setLockedCells(visibleCells);
       setValueCounts(numCounts);
       setMistakes([]);
